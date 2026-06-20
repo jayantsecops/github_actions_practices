@@ -1,0 +1,21 @@
+name: Hello
+
+
+on:
+  workflow_dispatch:
+
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+        - name: Checkout code
+          uses: actions/checkout@v2
+
+        - name: Build and test
+          run: |
+              echo "Building the project..."
+              # Add your build commands here
+              echo "Running tests..."
+              # Add your test commands here
